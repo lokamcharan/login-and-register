@@ -1,0 +1,84 @@
+.home-container {
+    padding: 20px;
+    /* text-align: center; */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    height: 60px;
+    
+  }
+  
+  .employee-card {
+    background-color: lightblue;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* 4 cards per row on large screens */
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .employee-card:hover {
+    transform: scale(1.05); /* Hover effect */
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .button-container {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: lightcoral;
+    border: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .employee-card {
+      width: calc(33.33% - 20px); /* 3 cards per row on medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .employee-card {
+      width: calc(50% - 20px); /* 2 cards per row on smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .employee-card {
+      width: 100%; /* 1 card per row on very small screens */
+    }
+  }
+  

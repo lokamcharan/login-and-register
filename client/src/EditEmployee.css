@@ -1,0 +1,97 @@
+/* Container for the entire edit page */
+.edit-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: lightblue;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+  }
+  
+  /* Title of the form */
+  h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Styling for the form elements */
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Input field styles */
+  .form-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Button style */
+  .submit-button {
+    padding: 10px 15px;
+    background-color: lightcoral;
+    color: black;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .edit-container {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .form-input {
+      padding: 8px;
+    }
+  
+    .submit-button {
+      padding: 12px 15px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .edit-container {
+      padding: 10px;
+      width: 90%;
+    }
+  
+    h2 {
+      font-size: 1.4rem;
+    }
+  
+    .form-input {
+      padding: 7px;
+    }
+  
+    .submit-button {
+      padding: 10px 12px;
+      font-size: 0.9rem;
+    }
+  }
+  

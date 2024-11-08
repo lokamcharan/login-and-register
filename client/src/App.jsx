@@ -1,27 +1,27 @@
+
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css'
-import{BrowserRouter,Routes,Route} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Sign from "./sigup";
 import Login from "./login";
 import Home from "./home";
+import EditEmployee from "./EditEmployee";
 
 function App() {
-
   return (
-    <>
-  <BrowserRouter>
 
-<Routes>
-  <Route path="/" element={<Sign/>}></Route>
-  <Route path="/login" element={<Login/>}></Route>
-  <Route path="/home" element={<Home/>}></Route>
-</Routes>
-
-  </BrowserRouter>
-
-    </>
-     
-  )
+    <div>
+      <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Sign />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/edit/:id" element={<EditEmployee />}/>
+      </Routes>
+    </Router>
+    </div>
+  );
 }
 
-export default App
+export default App;
