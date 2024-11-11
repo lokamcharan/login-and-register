@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import './home.css'; // Import the CSS file for styles
+import './home.css'; 
 
 function Home() {
   const [employees, setEmployees] = useState([]);
   const navigate = useNavigate();
 
-  // Fetch employees on component mount
+ 
   useEffect(() => {
     axios.get("http://localhost:5000/employees")
       .then(response => setEmployees(response.data))
       .catch(err => console.error(err));
   }, []);
 
-  // Delete employee
+ 
   const handleDelete = (id) => {
     axios.delete(`http://localhost:5000/employees/${id}`)
       .then(() => {
@@ -23,7 +23,7 @@ function Home() {
       .catch(err => console.error(err));
   };
 
-  // Navigate to edit page
+ 
   const handleEdit = (id) => {
     navigate(`/edit/${id}`);
   };

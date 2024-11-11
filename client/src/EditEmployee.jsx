@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import './EditEmployee.css'; // Import the CSS file for styles
+import './EditEmployee.css';
 
 function EditEmployee() {
   const { id } = useParams();

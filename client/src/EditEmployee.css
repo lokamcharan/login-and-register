@@ -1,4 +1,4 @@
-/* Container for the entire edit page */
+
 .edit-container {
     padding: 20px;
     max-width: 600px;
@@ -9,7 +9,7 @@
     margin-top: 100px;
   }
   
-  /* Title of the form */
+ 
   h2 {
     text-align: center;
     font-size: 1.8rem;
@@ -17,14 +17,14 @@
     color: #333;
   }
   
-  /* Styling for the form elements */
+
   .edit-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
   
-  /* Input field styles */
+  
   .form-input {
     padding: 10px;
     font-size: 1rem;
@@ -39,7 +39,7 @@
     border-color: #007bff;
   }
   
-  /* Button style */
+ 
   .submit-button {
     padding: 10px 15px;
     background-color: lightcoral;
@@ -55,7 +55,7 @@
     background-color: #0056b3;
   }
   
-  /* Responsive Design */
+
   @media screen and (max-width: 768px) {
     .edit-container {
       padding: 15px;

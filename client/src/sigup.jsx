@@ -1,9 +1,7 @@
 
-
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-// import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is imported
 
 function Sign() {
   const [name, setName] = useState("");
@@ -19,7 +17,7 @@ function Sign() {
       .post("http://localhost:5000/register", { name, email, password, phoneNumber, profession })
       .then((result) => {
         console.log(result);
-        navigate("/login"); // Redirect to login page after successful registration
+        navigate("/login"); 
       })
       .catch((err) => console.log(err));
   };
